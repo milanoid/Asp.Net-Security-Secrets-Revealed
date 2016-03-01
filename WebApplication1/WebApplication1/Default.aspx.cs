@@ -11,7 +11,8 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Trace.Write("My trace message");
+            Trace.Warn("My trace warn");
         }
     }
 }

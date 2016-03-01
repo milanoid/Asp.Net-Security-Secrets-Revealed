@@ -13,6 +13,9 @@ namespace WebApplication1
         {
             Trace.Write("My trace message");
             Trace.Warn("My trace warn");
+
+            var cookie = new HttpCookie("MyCookie", "Milan's cookie");
+            Response.Cookies.Add(cookie);
         }
     }
 }

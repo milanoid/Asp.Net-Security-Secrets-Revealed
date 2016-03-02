@@ -14,6 +14,12 @@ namespace WebApplication2.Controllers
             return View(new MyModel());
         }
 
+        [HttpPost]
+        public ActionResult Index(MyModel model)
+        {
+            return View(model);
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

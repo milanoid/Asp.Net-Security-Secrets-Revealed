@@ -7,6 +7,6 @@ namespace WebApplication2.Models
 {
     public class MyModel
     {
-        public string MyAttribute { get { return "<script>alert('hello world');</script>"; } }
-    }
+        public string MyAttribute { get; set; }
+    }    
 }

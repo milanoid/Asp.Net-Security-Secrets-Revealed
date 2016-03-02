@@ -3,6 +3,13 @@
     ViewBag.Title = "Home Page";
 }
 
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(m => m.MyAttribute)
+    <input type="submit" value="Submit"/>
+
+}
+
 <div class="jumbotron">
     <h1>@Html.Raw(@Model.MyAttribute)</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
